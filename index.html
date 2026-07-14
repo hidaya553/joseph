@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENKIMA JOSEPH | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="name">
+        <h2>Joseph.</h2>
+    </div>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav" id="nav">
+
+        <div class="links">
+            <a href="#">Whatsapp</a>
+            <a href="#">Email</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <div class="contact">
+            <button commandfor="contactDialog" command="show-modal">
+                Contact Me
+            </button>
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="banner">
+
+    <div class="bio">
+        <h1>Hello, I'm SENKIMA JOSEPH 👋</h1>
+
+        <p>
+            I am a passionate web developer who enjoys building
+            clean, responsive and user-friendly websites using
+            HTML and CSS. I love learning new technologies and
+            solving real-world problems through code.
+        </p>
+    </div>
+
+    <div class="image">
+        <img src="joseph.jpeg" alt="Joseph">
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Skills</h2>
+
+    <div class="flex-container">
+
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Responsive Design</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">Problem Solving</div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Technologies</h2>
+
+    <div class="flex-container">
+
+        <div class="card">Visual Studio Code</div>
+        <div class="card">Git</div>
+        <div class="card">GitHub</div>
+        <div class="card">Figma</div>
+        <div class="card">TikTok</div>
+        <div class="card">Vercel</div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Education</h2>
+
+    <div class="education">
+
+        <h3>BBA</h3>
+
+        <p>
+            MUBS - Nakawa
+        </p>
+
+        <small>2024 - Present</small>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>Joseph.</h3>
+
+    <p>
+        Building modern and responsive websites.
+    </p>
+
+    <p>
+        © 2026 Senkima Joseph. All Rights Reserved.
+    </p>
+
+</footer>
+
+<dialog id="contactDialog">
+
+    <div class="contact-heading">
+
+        <h2>Contact Me</h2>
+
+        <span onclick="document.getElementById('contactDialog').close()">
+            ✖
+        </span>
+
+    </div>
+
+    <form>
+
+        <label>Name</label>
+
+        <input type="text" placeholder="Your name">
+
+        <label>Email</label>
+
+        <input type="email" placeholder="Your email">
+
+        <label>Message</label>
+
+        <textarea rows="5" placeholder="Your message"></textarea>
+
+        <button type="button">Send Message</button>
+
+    </form>
+
+</dialog>
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+menuBtn.addEventListener("click", () => {
+
+    nav.classList.toggle("active");
+
+    menuBtn.textContent =
+    nav.classList.contains("active")
+    ? "✖"
+    : "☰";
+
+});
+
+</script>
+
+</body>
+</html>
